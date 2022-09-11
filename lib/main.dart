@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'UI- Desinging',
       // theme: ThemeData(primarySwatch: Colors.deepOrange),
-      home: const ScreenOne(),
+      home: const ScreenTwo(),
       debugShowCheckedModeBanner: false,
     );
   }
