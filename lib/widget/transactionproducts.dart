@@ -1,9 +1,6 @@
 // ignore_for_file: prefer_const_constructors, non_constant_identifier_names
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class Transactionproducts extends StatelessWidget {
   const Transactionproducts({
@@ -96,6 +93,9 @@ class Transactionproducts extends StatelessWidget {
                                 CircleAvatar(
                                   backgroundColor: Colors.green,
                                   radius: 5,
+                                ),
+                                SizedBox(
+                                  width: 10,
                                 ),
                                 Text(
                                   'Successfull',

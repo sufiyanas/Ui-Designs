@@ -16,9 +16,12 @@ class ScreenOne extends StatelessWidget {
         children: [
           Column(
             children: [
-              listtileFuncton(Icons.share, 'Share Dukaan App'),
-              listtileFuncton(Icons.chat_bubble_sharp, 'Change Language'),
-              listtileFuncton(Icons.whatsapp, 'WhatsApp Chat Support'),
+              listtileFuncton(Icons.share, 'Share Dukaan App',
+                  TrailingIcon: Icons.arrow_forward_ios_rounded),
+              listtileFuncton(Icons.chat_bubble_sharp, 'Change Language',
+                  TrailingIcon: Icons.arrow_forward_ios_rounded),
+              listtileFuncton(Icons.whatsapp, 'WhatsApp Chat Support',
+                  TrailingIcon2: Icons.toggle_on_outlined),
               listtileFuncton(Icons.lock, 'Privacy Policy'),
               listtileFuncton(Icons.star_border_sharp, 'Rate Us'),
               listtileFuncton(Icons.exit_to_app_outlined, 'Sign Out')
@@ -31,14 +34,25 @@ class ScreenOne extends StatelessWidget {
   }
 }
 
-listtileFuncton(
-  IconData icon,
-  String title, {
-  IconData? tileicon,
-}) {
+listtileFuncton(IconData icon, String title,
+    {IconData? tileicon, IconData? TrailingIcon, IconData? TrailingIcon2}) {
   return ListTile(
     leading: Icon(icon),
     title: Text(title),
+    trailing: Column(
+      children: [
+        SizedBox(
+          width: 20,
+          height: 1,
+        ),
+        Icon(
+          TrailingIcon2,
+          color: Colors.blue,
+          size: 30,
+        ),
+        Icon(TrailingIcon),
+      ],
+    ),
 
     // trailing: icon(tileicon),
   );

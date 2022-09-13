@@ -27,8 +27,8 @@ class CardScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    //Design Of Icons
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(7),
@@ -62,4 +62,23 @@ class CardScreen extends StatelessWidget {
       ],
     );
   }
+
+  // newbox() {
+  //   return Column(
+  //     children: [
+  //       SizedBox(
+  //         width: 113,
+  //       ),
+  //       Container(
+  //         alignment: Alignment.topLeft,
+  //         decoration: BoxDecoration(
+  //             color: Colors.green, borderRadius: BorderRadius.circular(3)),
+  //         child: Text(
+  //           'NEW',
+  //           style: TextStyle(color: Colors.white),
+  //         ),
+  //       ),
+  //     ],
+  //   );
+  // }
 }

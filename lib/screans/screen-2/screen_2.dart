@@ -48,11 +48,11 @@ class _ScreenTwoState extends State<ScreenTwo> {
                   icon: Icons.person_outlined,
                   colour: Colors.blue[300]),
               CardScreen(
-                  title: 'Store Qr\n Code',
+                  title: 'Store Qr\nCode',
                   icon: Icons.qr_code_scanner_outlined,
                   colour: Colors.blueGrey[300]),
               CardScreen(
-                  title: 'Extra\n Changes',
+                  title: 'Extra\nChanges',
                   icon: Icons.request_page_sharp,
                   colour: Colors.deepPurple[300]),
               CardScreen(
@@ -60,15 +60,18 @@ class _ScreenTwoState extends State<ScreenTwo> {
                 icon: Icons.format_align_left_outlined,
                 colour: Colors.pink[200],
                 trailing: Container(
+                  // alignment: Alignment.,
                   height: 20,
-                  width: 40,
-                  color: Colors.green,
-                  margin: const EdgeInsets.symmetric(horizontal: 30),
-                  child: const Center(
-                    child: Text(
-                      'New',
-                    ),
-                  ),
+                  width: 50,
+                  decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.circular(3)),
+                  // margin: const EdgeInsets.symmetric(horizontal: 30),
+                  child: Center(
+                      child: Text(
+                    'NEW',
+                    style: TextStyle(color: Colors.white),
+                  )),
                 ),
               ),
             ],

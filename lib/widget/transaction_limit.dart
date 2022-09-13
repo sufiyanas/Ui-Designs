@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class TransactionLimit extends StatelessWidget {
   const TransactionLimit({Key? key}) : super(key: key);
@@ -31,6 +32,14 @@ class TransactionLimit extends StatelessWidget {
           ),
           const SizedBox(
             height: 10,
+          ),
+          LinearPercentIndicator(
+            padding: const EdgeInsets.all(0),
+            barRadius: const Radius.circular(10),
+            width: MediaQuery.of(context).size.width - 60,
+            lineHeight: 8.0,
+            percent: 0.3,
+            progressColor: Colors.blue,
           ),
           const Text(
             '36668 left out of ₹50,000',

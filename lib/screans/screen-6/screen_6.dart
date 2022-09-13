@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:ui_desinging/widget/cataloge_product.dart';
 
@@ -25,8 +27,8 @@ class ScreenSix extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15.0),
           child: ListView(
-            children: [
-              const CatelogueProducts(
+            children: const [
+              CatelogueProducts(
                 ImageURL:
                     'https://shopdisney.in/media/catalog/product/cache/dff98280ed764012eadfa777851316fd/t/s/tsmwhsh6508_1_4.jpg',
                 Price: '699',

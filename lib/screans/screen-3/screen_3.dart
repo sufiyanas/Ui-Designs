@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:ui_desinging/widget/Transaction_limit.dart';
+import 'package:ui_desinging/widget/methordpayment_profile.dart';
 import 'package:ui_desinging/widget/transactionproducts.dart';
 import 'package:ui_desinging/widget/transactions.dart';
 
@@ -20,10 +21,10 @@ class ScreenThree extends StatelessWidget {
         child: ListView(
           children: [
             TransactionLimit(),
-            // liattailefunction(
-            //     endtext: 'Defalt Method',
-            //     starttext: 'online Payment',
-            //     trailingicon: (Icons.ac_unit_rounded)),
+            method_payment_profile(
+                leadingText: 'Default Method', trailingText: 'Online Payment'),
+            method_payment_profile(
+                leadingText: 'Payment Profile', trailingText: 'Bank Account'),
             Row(
               children: [
                 topcardfunction(
@@ -52,12 +53,23 @@ class ScreenThree extends StatelessWidget {
             Transactionproducts(
               Date: 'jul 24',
               OrderNo: '82342858',
-              Price: '799',
+              Price: '7',
               Time: '02:24 Pm',
               imageURL:
-                  'https://shopdisney.in/media/catalog/product/cache/dff98280ed764012eadfa777851316fd/h/d/hdmwhsh6504_1_2.jpg',
+                  'https://shopdisney.in/media/catalog/product/cache/dff98280ed764012eadfa777851316fd/s/t/sty-20-21-004963_1.jpg',
               nameUser: 'Deepa',
-              ProductName: 'EXPLORE | MEN | NAVY BLUE',
+              ProductName: 'MEN | T SHIRT',
+              Size: 'XXL',
+            ),
+            Transactionproducts(
+              Date: 'jul 24',
+              OrderNo: '82342858',
+              Price: '499',
+              Time: '02:24 Pm',
+              imageURL:
+                  'https://shopdisney.in/media/catalog/product/cache/dff98280ed764012eadfa777851316fd/s/t/sty-19-20-000576_1.jpg',
+              nameUser: 'Deepa',
+              ProductName: 'EXPLORE | BLUE',
               Size: 'XXL',
             ),
             Transactionproducts(
@@ -66,31 +78,20 @@ class ScreenThree extends StatelessWidget {
               Price: '799',
               Time: '02:24 Pm',
               imageURL:
-                  'https://shopdisney.in/media/catalog/product/cache/dff98280ed764012eadfa777851316fd/h/d/hdmwhsh6504_1_2.jpg',
+                  'https://shopdisney.in/media/catalog/product/cache/dff98280ed764012eadfa777851316fd/s/t/sty-18-19-002268_1_1.jpg',
               nameUser: 'Deepa',
-              ProductName: 'EXPLORE | MEN | NAVY BLUE',
+              ProductName: 'WOODLAND | NAVY',
               Size: 'XXL',
             ),
             Transactionproducts(
-              Date: 'jul 24',
-              OrderNo: '82342858',
-              Price: '799',
-              Time: '02:24 Pm',
+              Date: 'Jan 04',
+              OrderNo: '82848283',
+              Price: '499',
+              Time: '01:00 Pm',
               imageURL:
                   'https://shopdisney.in/media/catalog/product/cache/dff98280ed764012eadfa777851316fd/h/d/hdmwhsh6504_1_2.jpg',
               nameUser: 'Deepa',
-              ProductName: 'EXPLORE | MEN | NAVY BLUE',
-              Size: 'XXL',
-            ),
-            Transactionproducts(
-              Date: 'jul 24',
-              OrderNo: '82342858',
-              Price: '799',
-              Time: '02:24 Pm',
-              imageURL:
-                  'https://shopdisney.in/media/catalog/product/cache/dff98280ed764012eadfa777851316fd/h/d/hdmwhsh6504_1_2.jpg',
-              nameUser: 'Deepa',
-              ProductName: 'EXPLORE | MEN | NAVY BLUE',
+              ProductName: 'NAVY BLUE | H&M',
               Size: 'XXL',
             ),
           ],
