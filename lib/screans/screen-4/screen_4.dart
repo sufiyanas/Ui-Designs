@@ -46,7 +46,7 @@ class ScreenFour extends StatelessWidget {
                   onPressed: () {},
                   child: const Text(
                     'Select Domain',
-                    style: const TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 20),
                   ),
                 ),
                 ElevatedButton(

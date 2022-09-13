@@ -28,6 +28,7 @@ class DukaanHelp extends StatelessWidget {
                   border: Border.all(color: Colors.grey),
                 ),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
                     Icon(
                       Icons.chat_bubble_outline,
@@ -49,6 +50,7 @@ class DukaanHelp extends StatelessWidget {
                   border: Border.all(color: Colors.grey),
                 ),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
                     Icon(
                       Icons.phone_outlined,
