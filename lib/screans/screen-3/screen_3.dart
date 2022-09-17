@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_desinging/widget/Transaction_limit.dart';
 import 'package:ui_desinging/widget/methordpayment_profile.dart';
+import 'package:ui_desinging/widget/payment_methord.dart';
 import 'package:ui_desinging/widget/transactionproducts.dart';
 import 'package:ui_desinging/widget/transactions.dart';
 
@@ -25,6 +26,11 @@ class ScreenThree extends StatelessWidget {
                 leadingText: 'Default Method', trailingText: 'Online Payment'),
             method_payment_profile(
                 leadingText: 'Payment Profile', trailingText: 'Bank Account'),
+            Divider(
+              thickness: 1,
+            ),
+            Method_payment_profile(
+                leadingText: 'Payment Overview', trailingText: 'Life Time'),
             Row(
               children: [
                 topcardfunction(
@@ -53,7 +59,7 @@ class ScreenThree extends StatelessWidget {
             Transactionproducts(
               Date: 'jul 24',
               OrderNo: '82342858',
-              Price: '7',
+              Price: '999',
               Time: '02:24 Pm',
               imageURL:
                   'https://shopdisney.in/media/catalog/product/cache/dff98280ed764012eadfa777851316fd/s/t/sty-20-21-004963_1.jpg',
